@@ -1,6 +1,4 @@
-.containerpanels::-webkit-scrollbar {
-  display: none;
-}
+
 .container {
    min-height: 692px;
   position: fixed;
