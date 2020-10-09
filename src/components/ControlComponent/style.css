@@ -1,0 +1,20 @@
+.wrapcontrol{
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+
+}
+.h1control{
+    margin-bottom: 40px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem 1rem;
+}
+.btncontrol{
+    padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
+}

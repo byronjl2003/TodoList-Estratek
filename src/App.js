@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
 
+import { Provider } from 'react-redux';
+import { ModalTodoComponent } from './components/modaltodo/ModalTodoComponent';
+import { TodoPage } from './pages/TodoPage'
+
+import { store } from './store/store';
+import './App.css';
+import { ModalInfoComponent } from './components/modalInfo/ModalInfoComponent';
 function App() {
+
+  const [opennew, setOpennew] = useState(false);
+  const handleOpen = () => {
+    console.log("OPEN")
+    setOpennew(false);
+  }
+  const handleClose = () => {
+    setOpennew(true);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <ModalTodoComponent></ModalTodoComponent>
+      <ModalInfoComponent></ModalInfoComponent>
+      <TodoPage></TodoPage>
+
+
+    </Provider>
+
   );
 }
 
