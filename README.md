@@ -16,4 +16,4 @@ Para mover una tarea desde la lista de Todo a Done o vice versa dar click en el 
 
 ![diagrama][logo]
 
-[logo]:https://raw.githubusercontent.com/byronjl2003/Tarea6-Trambo/master/imagesForREADME/img1.jpeg "diagrama"
+[logo]:https://raw.githubusercontent.com/byronjl2003/TodoList-Estratek/main/images/Captura%20de%20pantalla%20de%202020-10-09%2002-20-01.png "diagrama"
